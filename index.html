@@ -498,6 +498,67 @@
   @media (max-width: 520px){
     .detail-grid{grid-template-columns:1fr;}
   }
+
+  /* ====== CATÁLOGO: SUBCATEGORIAS E PRODUTOS ====== */
+  .subcategory-title{
+    grid-column:1 / -1;
+    margin:2.2rem 0 0.4rem;
+    padding-bottom:0.7rem;
+    border-bottom:1px solid var(--line);
+  }
+
+  .subcategory-title:first-child{
+    margin-top:0;
+  }
+
+  .subcategory-title h4{
+    font-family:'Cinzel', serif;
+    font-size:1.15rem;
+    font-weight:500;
+    color:var(--bone);
+    letter-spacing:0.04em;
+  }
+
+  .product-card{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  .product-card .tile{
+    width:100%;
+  }
+
+  .product-info{
+    padding:0.8rem 0.2rem 0.3rem;
+    text-align:center;
+  }
+
+  .product-name{
+    font-family:'Cinzel', serif;
+    font-size:1rem;
+    color:var(--bone);
+    margin-bottom:0.25rem;
+  }
+
+  .product-price{
+    font-family:'Jost', sans-serif;
+    font-size:0.95rem;
+    color:var(--glow);
+    letter-spacing:0.06em;
+  }
+
+  .empty-category{
+    grid-column:1 / -1;
+    padding:3rem 1rem;
+    text-align:center;
+    border:1px solid var(--line);
+  }
+
+  .subcategory-card{
+    cursor:pointer;
+  }
+
 </style>
 </head>
 <body>
@@ -558,8 +619,7 @@
 
   catalogBtn.addEventListener('click', showCatalog);
 
-  // Faz o scroll suave para as secções âncora (#galeria, #sobre, etc.)
-  // sem usar navegação nativa — evita o aviso de "link externo" no preview.
+  // Scroll suave para as secções âncora.
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
@@ -569,17 +629,134 @@
     });
   });
 
-  // ====== CATÁLOGO ======
-  // Para adicionares as tuas fotos: escreve o caminho/URL de cada imagem
-  // dentro do array da categoria certa. Exemplo:
-  // "Carros": ["imagens/carro1.jpg", "imagens/carro2.jpg"]
-  // Podes ter quantas quiseres por categoria, ou nenhuma (fica com placeholder).
+  // ==========================================================
+  // CATÁLOGO
+  //
+  // Estrutura:
+  // Categoria
+  //   -> Subcategoria
+  //      -> Produto
+  //         -> imagem + preço
+  //
+  // Para adicionares produtos, basta copiares um bloco.
+  // ==========================================================
   const CATALOG = {
-    "Porta-Chaves": ["porco.jpeg"],
-    "Carros": ["carro.jpeg"],
-    "Anime": ["anime.jpeg"],
-    "Decos Mesa": ["decomesa.jpeg"],
-    "Marcadores de Livro": []
+    "Anime": {
+      "Anime": [
+        {
+          name: "Anime",
+          src: "anime.jpeg",
+          price: ""
+        }
+      ],
+      "Dragon Ball": [
+        {
+          name: "Estátua Son Goku",
+          src: "songoku.jpeg",
+          price: "??€"
+        }
+      ],
+      "Pokémon": [
+        {
+          name: "Pikachu Dead Pool",
+          src: "pickachudeadpool.jpeg",
+          price: "??€"
+        },
+        {
+          name: "Pikachu Homem Aranha",
+          src: "pickachuhomemaranha.jpeg",
+          price: "??€"
+        },
+        {
+          name: "Pikachu Venom",
+          src: "pickachuvemon.jpeg",
+          price: "??€"
+        }
+      ]
+    },
+    
+    "Dragões": {
+      "Dragões": [
+        {
+          name: "Dragão Azul Com Luz",
+          src: "dragao.jpeg",
+          price: "??€"
+        }
+      ]
+    },
+    "Porta-Chaves": {
+      "Porta Chaves": [
+        {
+          name: "Porco",
+          src: "porco.jpeg",
+          price: "5€"
+        },
+        {
+          name: "Porta Chaves Satoru Gojo",
+          src: "portachaveanime.jpeg",
+          price: "5€"
+        },
+        {
+          name: "Porta Chaves Roronoa Zoro",
+          src: "portachaves2.jpeg",
+          price: "5€"
+        }
+      ]
+    },
+
+    "Carros": {
+      "Carros Chaveiros": [
+        {
+          name: "Traseira Lamborghini",
+          src: "carro.jpeg",
+          price: "35€"
+        },
+        {
+        name: "Traseira Ferrari",
+        src: "chaveiroferrari.jpeg",
+        price: "??€"
+        },
+        {
+        name: "Traseira GT3",
+        src: "chaveirogt3.jpeg",
+        price: "??€"
+        }
+      ]
+    },
+
+
+    "Decos Mesa": {
+      "Deco Mesa Anime": [
+        {
+          name: "Deco Mesa One Pice",
+          src: "placaonepiece.jpeg",
+          price: "??€"
+        }
+      ]
+    },
+    "Marcadores Livro": {
+      "Marcador Livro": [
+        {
+          name: "Marcador",
+          src: "marcador.jpeg",
+          price: "4€"
+        },
+        {
+          name: "Marcador",
+          src: "marcador2.jpeg",
+          price: "4€"
+        }
+      ]
+    },
+    "Sai Sempre": {
+      "Sai Sempre": [
+        {
+          name: "Sai Sempre",
+          src: "saisempre.jpeg",
+          price: "1€"
+        }
+      ]
+    }
   };
 
   const romans = ['I','II','III','IV','V','VI','VII','VIII'];
@@ -590,51 +767,125 @@
   const detailTitle = document.getElementById('detail-title');
   const backBtn = document.getElementById('back-btn');
 
+  // Conta todos os produtos de uma categoria.
+  function countProducts(category){
+    return Object.values(category).reduce((total, products) => {
+      return total + products.length;
+    }, 0);
+  }
+
+  // Mostra as categorias principais.
   function buildGrid(){
     grid.innerHTML = '';
-    const keys = Object.keys(CATALOG);
-    keys.forEach((cat, i) => {
-      const imgs = CATALOG[cat];
+
+    const categories = Object.keys(CATALOG);
+
+    categories.forEach((cat, i) => {
+      const subcategories = CATALOG[cat];
+      const subcatCount = Object.keys(subcategories).length;
+      const productCount = countProducts(subcategories);
+
       const card = document.createElement('div');
       card.className = 'category-card';
+
       card.innerHTML = `
-        <span class="cat-num">${romans[i] || (i+1)}</span>
+        <span class="cat-num">${romans[i] || (i + 1)}</span>
         <h3>${cat}</h3>
-        <span class="cat-count">${imgs.length ? imgs.length + (imgs.length === 1 ? ' imagem' : ' imagens') : 'por preencher'}</span>
+        <span class="cat-count">
+          ${subcatCount} ${subcatCount === 1 ? 'subcategoria' : 'subcategorias'}
+          · ${productCount} ${productCount === 1 ? 'produto' : 'produtos'}
+        </span>
       `;
+
       card.addEventListener('click', () => openCategory(cat));
       grid.appendChild(card);
     });
-    catCount.textContent = keys.length + ' categorias';
+
+    catCount.textContent =
+      categories.length + (categories.length === 1 ? ' categoria' : ' categorias');
   }
 
+  // Abre uma categoria e mostra todas as suas subcategorias e produtos.
   function openCategory(cat){
-    const imgs = CATALOG[cat];
+    const subcategories = CATALOG[cat];
+
     detailTitle.textContent = cat;
     detailGrid.innerHTML = '';
 
-    if(imgs.length === 0){
-      for(let i = 0; i < 3; i++){
-        const tile = document.createElement('div');
-        tile.className = 'tile';
-        tile.innerHTML = `<span class="label">Adiciona aqui uma foto<br>de ${cat}</span>`;
-        detailGrid.appendChild(tile);
-      }
+    const subcatNames = Object.keys(subcategories);
+
+    if(subcatNames.length === 0){
+      const empty = document.createElement('div');
+      empty.className = 'empty-category';
+      empty.innerHTML = `<span class="label">Ainda não existem produtos nesta categoria.</span>`;
+      detailGrid.appendChild(empty);
     } else {
-      imgs.forEach(src => {
-        const tile = document.createElement('div');
-        tile.className = 'tile img-tile';
-        tile.innerHTML = `<img src="${src}" alt="${cat}">`;
-        detailGrid.appendChild(tile);
+      subcatNames.forEach(subcat => {
+        // Título da subcategoria.
+        const subTitle = document.createElement('div');
+        subTitle.className = 'subcategory-title';
+        subTitle.innerHTML = `<h4>${subcat}</h4>`;
+        detailGrid.appendChild(subTitle);
+
+        const products = subcategories[subcat];
+
+        if(products.length === 0){
+          const empty = document.createElement('div');
+          empty.className = 'empty-category';
+          empty.innerHTML = `<span class="label">Ainda não existem produtos em ${subcat}.</span>`;
+          detailGrid.appendChild(empty);
+          return;
+        }
+
+        // Produtos da subcategoria.
+        products.forEach(product => {
+          const card = document.createElement('div');
+          card.className = 'product-card';
+
+          const tile = document.createElement('div');
+          tile.className = 'tile img-tile';
+
+          const img = document.createElement('img');
+          img.src = product.src;
+          img.alt = product.name || subcat;
+          tile.appendChild(img);
+
+          const info = document.createElement('div');
+          info.className = 'product-info';
+
+          if(product.name){
+            const name = document.createElement('div');
+            name.className = 'product-name';
+            name.textContent = product.name;
+            info.appendChild(name);
+          }
+
+          if(product.price){
+            const price = document.createElement('div');
+            price.className = 'product-price';
+            price.textContent = product.price;
+            info.appendChild(price);
+          }
+
+          card.appendChild(tile);
+          card.appendChild(info);
+          detailGrid.appendChild(card);
+        });
       });
     }
 
     grid.hidden = true;
     detail.hidden = false;
+
     requestAnimationFrame(() => detail.classList.add('visible'));
-    detail.scrollIntoView({behavior:'smooth', block:'start'});
+
+    detail.scrollIntoView({
+      behavior:'smooth',
+      block:'start'
+    });
   }
 
+  // Voltar para as categorias.
   backBtn.addEventListener('click', () => {
     detail.classList.remove('visible');
     detail.hidden = true;
