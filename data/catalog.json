@@ -49,20 +49,9 @@
   ],
   "products": [
     {
-      "id": "anime",
-      "name": "Anime",
-      "category": "anime",
-      "subcategory": "Anime",
-      "price": "",
-      "description": "",
-      "images": [
-        "images/catalogo/anime/anime/anime.jpeg"
-      ]
-    },
-    {
       "id": "estatua-son-goku",
-      "name": "Estátua Son Goku",
-      "category": "anime",
+      "name": "Son Goku",
+      "category": "nova-categoria",
       "subcategory": "Dragon Ball",
       "price": "35€",
       "description": "",
@@ -73,7 +62,7 @@
     {
       "id": "pikachu-dead-pool",
       "name": "Pikachu Dead Pool",
-      "category": "anime",
+      "category": "nova-categoria",
       "subcategory": "Pokémon",
       "price": "25€",
       "description": "",
@@ -84,7 +73,7 @@
     {
       "id": "pikachu-homem-aranha",
       "name": "Pikachu Homem Aranha",
-      "category": "anime",
+      "category": "nova-categoria",
       "subcategory": "Pokémon",
       "price": "25€",
       "description": "",
@@ -95,7 +84,7 @@
     {
       "id": "pikachu-venom",
       "name": "Pikachu Venom",
-      "category": "anime",
+      "category": "nova-categoria",
       "subcategory": "Pokémon",
       "price": "25€",
       "description": "",
@@ -277,17 +266,6 @@
       "description": "",
       "images": [
         "images/catalogo/sai-sempre/sai-sempre/saisempre.jpeg"
-      ]
-    },
-    {
-      "id": "nova-peca",
-      "name": "Teste",
-      "price": "??€",
-      "category": "nova-categoria",
-      "subcategory": "",
-      "description": "",
-      "images": [
-        "images/catalogo/uploads/eed553d2-5dbe-47eb-80b1-c4ce018fdeb3.jpeg"
       ]
     },
     {
