@@ -111,7 +111,7 @@
       "price": "5€",
       "description": "",
       "images": [
-        "images/catalogo/porta-chaves/porta-chaves/porco.jpeg"
+        "images/catalogo/uploads/f029ef01-279c-433a-ba69-d89a7376cc34.jpeg"
       ]
     },
     {
@@ -144,7 +144,9 @@
       "price": "35€",
       "description": "",
       "images": [
-        "images/catalogo/carros/carros-chaveiros/carro.jpeg"
+        "images/catalogo/uploads/71f62266-7d38-4e12-8594-e4dfd46ae42f.jpeg",
+        "images/catalogo/uploads/d4947d48-6cd0-4420-bf48-86f72b249654.jpeg",
+        "images/catalogo/uploads/e99862fd-7bbf-4e4a-a90f-d144d22ce6d7.jpeg"
       ]
     },
     {
@@ -207,10 +209,11 @@
       "name": "Luminária Cavaleiro",
       "category": "luminarias",
       "subcategory": "Luminárias",
-      "price": "??€",
+      "price": "20€",
       "description": "",
       "images": [
-        "images/catalogo/luminarias/luminarias/luzcavaleiro.jpeg"
+        "images/catalogo/uploads/43a517b5-c732-4e6a-ac48-623c5d16aa7e.jpeg",
+        "images/catalogo/uploads/73d690e2-867f-4af5-87d7-16b17c1642f9.jpeg"
       ]
     },
     {
@@ -218,10 +221,11 @@
       "name": "Luminária Fruta One Piece",
       "category": "luminarias",
       "subcategory": "Luminárias",
-      "price": "??€",
+      "price": "40€",
       "description": "",
       "images": [
-        "images/catalogo/luminarias/luminarias/luzfruta.jpeg"
+        "images/catalogo/uploads/a0e11751-1f6a-4efc-a6f3-5a620da83873.jpeg",
+        "images/catalogo/uploads/dad08c31-e40a-4fac-8a8f-71ec531fac7e.jpeg"
       ]
     },
     {
@@ -229,10 +233,11 @@
       "name": "Luminária Mão Ferro",
       "category": "luminarias",
       "subcategory": "Luminárias",
-      "price": "??€",
+      "price": "40€",
       "description": "",
       "images": [
-        "images/catalogo/luminarias/luminarias/luzmaohomemferro.jpeg"
+        "images/catalogo/uploads/f3fd1cdf-4bca-48ec-8819-c1195427c974.jpeg",
+        "images/catalogo/uploads/6c23b1ca-cc46-4bea-9477-276bf6c72343.jpeg"
       ]
     },
     {
@@ -240,10 +245,12 @@
       "name": "Luminária Polvo",
       "category": "luminarias",
       "subcategory": "Luminárias",
-      "price": "??€",
+      "price": "20€",
       "description": "",
       "images": [
-        "images/catalogo/luminarias/luminarias/luzpolvo.jpeg"
+        "images/catalogo/uploads/0a30b58c-0f5a-40d2-9cfb-90646f80f5ca.jpeg",
+        "images/catalogo/uploads/736bc570-9d6a-4eec-b10a-42d3b517e8fb.jpeg",
+        "images/catalogo/uploads/ba049c84-129c-46eb-96b2-dea2f240252c.jpeg"
       ]
     },
     {
@@ -251,10 +258,11 @@
       "name": "Luminária Harry Potter",
       "category": "luminarias",
       "subcategory": "Luminárias",
-      "price": "??€",
+      "price": "40€",
       "description": "",
       "images": [
-        "images/catalogo/luminarias/luminarias/luzchapeuharrypotter.jpeg"
+        "images/catalogo/uploads/8e5a8c80-0139-4633-9141-de14d586b4a9.jpeg",
+        "images/catalogo/uploads/a6422783-f82b-4297-9809-af80df31b0b7.jpeg"
       ]
     },
     {
@@ -263,7 +271,7 @@
       "category": "sai-sempre",
       "subcategory": "Sai Sempre",
       "price": "1€",
-      "description": "",
+      "description": "Apenas disponível em eventos presenciais!",
       "images": [
         "images/catalogo/sai-sempre/sai-sempre/saisempre.jpeg"
       ]
@@ -273,7 +281,7 @@
       "name": "Beerus",
       "price": "35€",
       "category": "nova-categoria",
-      "subcategory": "",
+      "subcategory": "Dragon Ball",
       "description": "",
       "images": [
         "images/catalogo/uploads/8176dfd8-4b54-4723-aff0-b13733ffaa60.jpeg",
@@ -297,12 +305,12 @@
       "name": "Beerus V2",
       "price": "35€",
       "category": "nova-categoria",
-      "subcategory": "",
+      "subcategory": "Dragon Ball",
       "description": "",
       "images": [
+        "images/catalogo/uploads/d8247054-8780-453b-9744-80dec914ba15.jpeg",
         "images/catalogo/uploads/b666cd9c-694a-41c9-8b39-c17c999a994c.jpeg",
-        "images/catalogo/uploads/dd7c6785-9ecf-4236-b1aa-966e2357295a.jpeg",
-        "images/catalogo/uploads/d8247054-8780-453b-9744-80dec914ba15.jpeg"
+        "images/catalogo/uploads/dd7c6785-9ecf-4236-b1aa-966e2357295a.jpeg"
       ]
     },
     {
@@ -313,9 +321,9 @@
       "subcategory": "Naruto",
       "description": "",
       "images": [
+        "images/catalogo/uploads/d89b757e-2d5f-4a51-a654-3c504211e0c4.jpeg",
         "images/catalogo/uploads/8c92bb94-1f1a-40f0-87ef-a8dcd6bfbc4d.jpeg",
-        "images/catalogo/uploads/4b6de27b-a715-4adf-957d-961c69c3d079.jpeg",
-        "images/catalogo/uploads/d89b757e-2d5f-4a51-a654-3c504211e0c4.jpeg"
+        "images/catalogo/uploads/4b6de27b-a715-4adf-957d-961c69c3d079.jpeg"
       ]
     },
     {
@@ -323,7 +331,7 @@
       "name": "Kratos X Duffy Duck",
       "price": "45€",
       "category": "nova-categoria",
-      "subcategory": "",
+      "subcategory": ".",
       "description": "",
       "images": [
         "images/catalogo/uploads/e52d44ab-bf1b-4f5a-b34d-9d043319bae1.jpeg",
@@ -348,12 +356,23 @@
       "name": "Freeza",
       "price": "25€",
       "category": "nova-categoria",
-      "subcategory": "",
+      "subcategory": "Dragon Ball",
       "description": "",
       "images": [
         "images/catalogo/uploads/b60013ce-193e-4121-8583-6179de311d7f.jpeg",
         "images/catalogo/uploads/eecd1b92-914a-4641-9d0d-061235ac6ea5.jpeg",
         "images/catalogo/uploads/f58d1df3-b739-47ea-aad3-d974634d3212.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca",
+      "name": "Porta Chaves NFC",
+      "price": "5€",
+      "category": "porta-chaves",
+      "subcategory": "",
+      "description": "Porta Chaves com NFC, configurável com um link á sua escolha!",
+      "images": [
+        "images/catalogo/uploads/149728af-6a2d-4bdd-940a-e63925ad90fe.jpeg"
       ]
     }
   ]
