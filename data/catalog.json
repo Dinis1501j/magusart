@@ -14,12 +14,12 @@
     {
       "id": "porta-chaves",
       "name": "Porta-Chaves",
-      "cover": "images/catalogo/porta-chaves/porta-chaves/porco.jpeg"
+      "cover": "images/catalogo/uploads/149728af-6a2d-4bdd-940a-e63925ad90fe.jpeg"
     },
     {
       "id": "carros",
       "name": "Carros",
-      "cover": "images/catalogo/carros/carros-chaveiros/carro.jpeg"
+      "cover": "images/catalogo/uploads/29eebb39-d04d-4ad1-b72a-bba66b04cd47.jpeg"
     },
     {
       "id": "decos-mesa",
@@ -138,7 +138,7 @@
     },
     {
       "id": "traseira-lamborghini",
-      "name": "Traseira Lamborghini",
+      "name": "Chaveiro Traseira Lamborghini",
       "category": "carros",
       "subcategory": "Carros Chaveiros",
       "price": "35€",
@@ -151,7 +151,7 @@
     },
     {
       "id": "traseira-ferrari",
-      "name": "Traseira Ferrari",
+      "name": "Chaveiro Traseira Ferrari",
       "category": "carros",
       "subcategory": "Carros Chaveiros",
       "price": "25€",
@@ -162,13 +162,14 @@
     },
     {
       "id": "traseira-gt3",
-      "name": "Traseira GT3",
+      "name": "Chaveiro Traseira GT3",
       "category": "carros",
       "subcategory": "Carros Chaveiros",
       "price": "35€",
       "description": "",
       "images": [
-        "images/catalogo/carros/carros-chaveiros/chaveirogt3.jpeg"
+        "images/catalogo/carros/carros-chaveiros/chaveirogt3.jpeg",
+        "images/catalogo/uploads/28f40129-9c8e-41cd-8e13-5da6c6627673.jpeg"
       ]
     },
     {
@@ -248,9 +249,9 @@
       "price": "20€",
       "description": "",
       "images": [
-        "images/catalogo/uploads/0a30b58c-0f5a-40d2-9cfb-90646f80f5ca.jpeg",
         "images/catalogo/uploads/736bc570-9d6a-4eec-b10a-42d3b517e8fb.jpeg",
-        "images/catalogo/uploads/ba049c84-129c-46eb-96b2-dea2f240252c.jpeg"
+        "images/catalogo/uploads/ba049c84-129c-46eb-96b2-dea2f240252c.jpeg",
+        "images/catalogo/uploads/0a30b58c-0f5a-40d2-9cfb-90646f80f5ca.jpeg"
       ]
     },
     {
@@ -373,6 +374,189 @@
       "description": "Porta Chaves com NFC, configurável com um link á sua escolha!",
       "images": [
         "images/catalogo/uploads/149728af-6a2d-4bdd-940a-e63925ad90fe.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-9",
+      "name": "Chaveiro Traseira Audi R8",
+      "price": "??€",
+      "category": "carros",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/608f50d2-3692-44d8-8bdd-d8955f587457.jpeg",
+        "images/catalogo/uploads/8594aca4-1053-4631-bd28-6742422507e0.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-10",
+      "name": "Chaveiro Traseira Camaro",
+      "price": "??€",
+      "category": "carros",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/89f119ad-73fb-4c7a-9a20-181fce1e3d6a.jpeg",
+        "images/catalogo/uploads/2c48dd99-cb7e-4d9b-9388-16599146e3f6.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-11",
+      "name": "Chaveiro Traseira Carro Ghostbusters",
+      "price": "??€",
+      "category": "carros",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/e6aabb52-a3f8-4660-a676-bf30fcb74094.jpeg",
+        "images/catalogo/uploads/101999c9-c32c-4b1e-90d3-328856c6d590.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-12",
+      "name": "Chaveiro Frente GTO",
+      "price": "??€",
+      "category": "carros",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/29eebb39-d04d-4ad1-b72a-bba66b04cd47.jpeg",
+        "images/catalogo/uploads/39fbdb24-f15c-4901-828d-83b5b3c98a98.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-13",
+      "name": "Chaveiro Traseira Batmóvel",
+      "price": "??€",
+      "category": "carros",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/0a9fc1a6-f04d-45e6-9b41-fba83f773abf.jpeg",
+        "images/catalogo/uploads/26e9493d-98c7-4b27-9b9e-616061474652.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-14",
+      "name": "Conjunto Tartaruga Ninjas",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/808a7b30-4fc6-4073-bb67-4279b7d1b5f2.jpeg",
+        "images/catalogo/uploads/a35a5af7-137c-4aaa-8582-1b6f5cfe59b6.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-15",
+      "name": "Dobby",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Harry Potter",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/bd6efc67-4943-4fe3-a7c5-2eda0659a8b7.jpeg",
+        "images/catalogo/uploads/14c7525f-a7e4-4853-ab0f-05c78e1f8259.jpeg",
+        "images/catalogo/uploads/6ddca2f4-91c2-416c-8216-0fcc58596cca.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-16",
+      "name": "Harry Potter",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Harry Potter",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/35a801da-e7ce-4bab-aa86-a5c69af6507f.jpeg",
+        "images/catalogo/uploads/5ea89260-9aa1-40a1-9b54-c51bd72617a0.jpeg",
+        "images/catalogo/uploads/a969f99b-9fa9-4604-8de6-35084b684bbf.jpeg",
+        "images/catalogo/uploads/30ce8cb7-5493-429a-afa9-f0f966d4133a.jpeg",
+        "images/catalogo/uploads/7bac5f8f-c69a-4189-a55a-fca2a4e9ed6a.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-17",
+      "name": "Voldemort",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Harry Potter",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/d7f07799-ed4e-477b-9d2a-2061da6262cb.jpeg",
+        "images/catalogo/uploads/1090c0c6-56af-4691-93d2-3e4dafc7af49.jpeg",
+        "images/catalogo/uploads/4c4a1434-da4b-4987-90fd-67cae5a3a88a.jpeg",
+        "images/catalogo/uploads/178c9173-3d05-4a23-bc16-1a53c8390f40.jpeg",
+        "images/catalogo/uploads/da0575e4-4704-4a1c-9258-057491aae273.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-18",
+      "name": "Hedwig - Coruja do Harry",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Harry Potter",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/712e2c45-0787-4c82-a8b5-2f98dc6cd65c.jpeg",
+        "images/catalogo/uploads/e3c0b4ee-61b7-4c80-a2f2-57e3a42eb50b.jpeg",
+        "images/catalogo/uploads/37adf14a-2b9f-4bab-bae6-fbb733241319.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-19",
+      "name": "Kratos",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Kratos",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/aa366fba-60d0-4816-b735-e32fe8b8ea6e.jpeg",
+        "images/catalogo/uploads/72991db9-e5da-4d73-a8f8-f9a9ecc21cbf.jpeg",
+        "images/catalogo/uploads/e56e7d91-31a9-472a-b72d-cbba55849c02.jpeg",
+        "images/catalogo/uploads/3f175538-8bea-4fa6-a326-1f50d4f85f22.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-20",
+      "name": "Tio Patinhas",
+      "price": "??€",
+      "category": "nova-categoria",
+      "subcategory": "Tio Patinhas",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/e58fdc61-0ebc-4d81-8782-99e448b8f1b5.jpeg",
+        "images/catalogo/uploads/4b3d19cd-49ac-4b8a-9ee4-290e43c806c8.jpeg",
+        "images/catalogo/uploads/339be3d8-03ff-43ee-8ffe-42c3cfc27f8d.jpeg",
+        "images/catalogo/uploads/ff6a2648-e6c2-40e0-a161-fe8d008042fa.jpeg",
+        "images/catalogo/uploads/8cd02956-a9e0-4f83-9e9a-d722267e4d2c.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-21",
+      "name": "Logo Harry Potter",
+      "price": "??€",
+      "category": "decos-mesa",
+      "subcategory": "Harry Potter",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/b2b90655-c94d-4fe8-b1f0-c416a9d8c35a.jpeg",
+        "images/catalogo/uploads/a47cebfc-a1b0-4e44-afe5-2b0ba4a7027c.jpeg",
+        "images/catalogo/uploads/380b7e8e-f503-47bd-8455-35fe87df1577.jpeg"
+      ]
+    },
+    {
+      "id": "nova-peca-22",
+      "name": "Nimbus 2000",
+      "price": "??€",
+      "category": "decos-mesa",
+      "subcategory": "",
+      "description": "",
+      "images": [
+        "images/catalogo/uploads/820d00cf-3e96-4173-8f08-73cb538bcc31.jpeg",
+        "images/catalogo/uploads/ad0f0809-d06a-4907-b353-d043a14437c1.jpeg",
+        "images/catalogo/uploads/9fb5c680-8fd1-4b92-a5bb-926ec7c151df.jpeg"
       ]
     }
   ]
